@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* ── Foundation ─────────────────────────── */
+  --color-cream-50: #FEFEFC;
+  --color-cream-100: #F9F8F4;
+  --color-cream-200: #EFEDE5;
+
+  --color-ink-900: #0A0E0B;
+  --color-ink-800: #16201A;
+  --color-ink-700: #293530;
+  --color-ink-600: #4A554F;
+  --color-ink-500: #6B756F;
+  --color-ink-400: #8E978F;
+
+  /* ── Primary — institutional emerald ────── */
+  --color-emerald-50: #EEF5EF;
+  --color-emerald-100: #D6E5D8;
+  --color-emerald-200: #A3C2A6;
+  --color-emerald-300: #6F9E73;
+  --color-emerald-400: #3B7B40;
+  --color-emerald-500: #1F5524;
+  --color-emerald-600: #173F1B;
+  --color-emerald-700: #102C13;
+  --color-emerald-800: #0A1D0C;
+  --color-emerald-900: #050E06;
+
+  /* ── Accent — warm ochre ────────────────── */
+  --color-ochre-50: #FCF5E6;
+  --color-ochre-100: #F5E3B8;
+  --color-ochre-200: #E8C56F;
+  --color-ochre-300: #D4A537;
+  --color-ochre-400: #B8881A;
+  --color-ochre-500: #8E6912;
+
+  /* ── Typography ─────────────────────────── */
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  /* ── Display sizes ──────────────────────── */
+  --text-display-xl: clamp(3rem, 8vw, 7rem);
+  --text-display-xl--line-height: 0.95;
+  --text-display-xl--letter-spacing: -0.04em;
+
+  --text-display-lg: clamp(2.5rem, 6vw, 5rem);
+  --text-display-lg--line-height: 1;
+  --text-display-lg--letter-spacing: -0.035em;
+
+  --text-display-md: clamp(2rem, 4vw, 3.5rem);
+  --text-display-md--line-height: 1.05;
+  --text-display-md--letter-spacing: -0.03em;
+
+  --text-display-sm: clamp(1.5rem, 3vw, 2.25rem);
+  --text-display-sm--line-height: 1.15;
+  --text-display-sm--letter-spacing: -0.02em;
+
+  /* ── Layout ─────────────────────────────── */
+  --container-8xl: 88rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ─────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(31, 85, 36, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 100%, rgba(212, 165, 55, 0.02) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background-color: var(--color-emerald-500);
+  color: var(--color-cream-50);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-emerald-500);
+  outline-offset: 2px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }

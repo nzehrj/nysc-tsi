@@ -4,6 +4,7 @@ import { db } from "@/lib/db";
 import { registrations } from "@/lib/db/schema";
 import { fullRegistrationSchema } from "@/lib/validation/registration";
 import { generateReferenceCode } from "@/lib/reference-code";
+import { sendConfirmationEmail } from "@/lib/email/confirmation";
 
 // ── Simple in-memory rate limiter ────────────────────────
 // Good enough for staging. For production, swap in Upstash Redis
@@ -148,7 +149,13 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // 7. Email will be added next round. For now, return success.
+  // 7. Send confirmation email (non-blocking).
+  // If email fails, the registration still succeeds — we don't make
+  // the user retry a successful submission because of email trouble.
+  sendConfirmationEmail({ registration: data, referenceCode }).catch((err) => {
+    console.error("Confirmation email failed:", err);
+  });
+
   return NextResponse.json(
     {
       success: true,

@@ -40,7 +40,7 @@ export const registrations = pgTable(
   "registrations",
   {
     id: uuid("id").defaultRandom().primaryKey(),
-    referenceCode: varchar("reference_code", { length: 12 }).notNull().unique(),
+    referenceCode: varchar("reference_code", { length: 16 }).notNull().unique(),
 
     // Personal
     fullName: varchar("full_name", { length: 200 }).notNull(),

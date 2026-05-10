@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Reveal from "@/components/Reveal";
 
 const faqs = [
   {
@@ -83,31 +84,35 @@ export default function Faq() {
   return (
     <section id="faq" className="py-24 md:py-32 bg-cream-100/40">
       <div className="max-w-8xl mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-12 gap-6 mb-16">
-          <div className="col-span-12 md:col-span-3">
-            <div className="font-mono text-sm uppercase tracking-[0.2em] text-emerald-500 flex items-center gap-3 mb-6">
-              <span className="w-8 h-px bg-emerald-500" />
-              FAQ
+        <Reveal>
+          <div className="grid grid-cols-12 gap-6 mb-16">
+            <div className="col-span-12 md:col-span-3">
+              <div className="font-mono text-sm uppercase tracking-[0.2em] text-emerald-500 flex items-center gap-3 mb-6">
+                <span className="w-8 h-px bg-emerald-500" />
+                FAQ
+              </div>
+            </div>
+            <div className="col-span-12 md:col-span-9">
+              <h2 className="font-display text-display-lg text-ink-900 text-balance">
+                Honest answers to the questions{" "}
+                <em className="font-light text-emerald-500">
+                  you&apos;re actually asking
+                </em>
+                .
+              </h2>
             </div>
           </div>
-          <div className="col-span-12 md:col-span-9">
-            <h2 className="font-display text-display-lg text-ink-900 text-balance">
-              Honest answers to the questions{" "}
-              <em className="font-light text-emerald-500">
-                you&apos;re actually asking
-              </em>
-              .
-            </h2>
-          </div>
-        </div>
+        </Reveal>
 
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-start-4 md:col-span-9">
-            {faqs.map((faq, i) => (
-              <FaqItem key={i} q={faq.q} a={faq.a} idx={i} />
-            ))}
+        <Reveal delay={0.15}>
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 md:col-start-4 md:col-span-9">
+              {faqs.map((faq, i) => (
+                <FaqItem key={i} q={faq.q} a={faq.a} idx={i} />
+              ))}
+            </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

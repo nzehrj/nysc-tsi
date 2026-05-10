@@ -68,7 +68,7 @@ export default function ContactPage() {
           <div className="mb-16 md:mb-20">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 font-mono text-xs tracking-[0.2em] uppercase text-ink-600 hover:text-emerald-500 transition-colors mb-8"
+              className="inline-flex items-center gap-2 font-mono text-sm tracking-[0.2em] uppercase text-ink-600 hover:text-emerald-500 transition-colors mb-8"
             >
               <span aria-hidden>←</span> Back to home
             </Link>
@@ -84,9 +84,9 @@ export default function ContactPage() {
                 <h1 className="font-display text-display-lg text-ink-900 leading-[0.95] tracking-tight text-balance">
                   Talk to <em className="font-light text-emerald-500">us</em>.
                 </h1>
-                <p className="font-display text-2xl text-ink-700 mt-8 leading-snug max-w-2xl text-balance">
+                <p className="font-display text-3xl text-ink-700 mt-8 leading-snug max-w-2xl text-balance">
                   Questions about applying, partnerships, press, or anything else.
-                  We typically reply within one working day.
+                  We typically reply within 24 hours.
                 </p>
               </div>
             </div>
@@ -102,19 +102,19 @@ export default function ContactPage() {
                 ✦
               </div>
               <div className="relative z-10">
-                <div className="font-mono text-sm tracking-[0.25em] uppercase text-ochre-200 mb-4">
-                  ── Message sent
+                <div className="font-mono text-lg tracking-[0.25em] uppercase text-ochre-200 mb-4">
+                   Message sent
                 </div>
                 <h2 className="font-display text-display-md text-cream-50 leading-[1.05] tracking-tight">
                   Thank you. <em className="font-light text-ochre-200">We&apos;ll be in touch.</em>
                 </h2>
-                <p className="text-lg text-cream-50/85 mt-6 max-w-md leading-relaxed">
-                  Our team typically replies within one working day. Check your
-                  inbox — and your spam folder, just in case.
+                <p className="text-xl text-cream-50/85 mt-6 max-w-md leading-relaxed">
+                  Our team typically replies within 24 hours. Check your
+                  inbox and your spam folder, just in case.
                 </p>
                 <button
                   onClick={() => setSuccess(false)}
-                  className="mt-10 inline-flex items-center gap-2 font-sans text-base text-cream-50 border-b border-cream-50/30 hover:border-ochre-200 hover:text-ochre-200 pb-1 transition-colors"
+                  className="mt-10 inline-flex items-center gap-2 font-sans text-lg text-cream-50 border-b border-cream-50/30 hover:border-ochre-200 hover:text-ochre-200 pb-1 transition-colors"
                 >
                   Send another message
                   <span aria-hidden>→</span>
@@ -169,15 +169,15 @@ export default function ContactPage() {
               </div>
 
               {submitError && (
-                <div className="mt-6 p-5 border border-red-700/30 bg-red-50 text-sm text-red-900">
+                <div className="mt-6 p-5 border border-red-700/30 bg-red-50 text-lg text-red-900">
                   <strong className="font-mono text-xs uppercase tracking-wider">Error</strong>
                   <p className="mt-1.5">{submitError}</p>
                 </div>
               )}
 
               <div className="mt-10 flex items-center justify-between gap-4 pt-8 border-t border-ink-900/10">
-                <span className="font-mono text-xs tracking-[0.25em] uppercase text-ink-500">
-                  We reply within 1 working day
+                <span className="font-mono text-sm tracking-[0.25em] uppercase text-ink-500">
+                  We reply within 24 hours.
                 </span>
                 <button
                   type="submit"
@@ -203,10 +203,10 @@ export default function ContactPage() {
           {/* Help footer */}
           <div className="mt-20 pt-12 border-t border-ink-900/10 grid md:grid-cols-2 gap-8">
             <div>
-              <div className="font-mono text-xs tracking-[0.2em] uppercase text-emerald-500 mb-3">
+              <div className="font-mono text-sm tracking-[0.2em] uppercase text-emerald-500 mb-3">
                 Email us directly
               </div>
-              <p className="text-sm text-ink-700 leading-relaxed">
+              <p className="text-lg text-ink-700 leading-relaxed">
                 <a
                   href="mailto:support@nysc-tsi.org"
                   className="text-emerald-500 underline underline-offset-4 hover:text-emerald-700"
@@ -216,10 +216,10 @@ export default function ContactPage() {
               </p>
             </div>
             <div>
-              <div className="font-mono text-xs tracking-[0.2em] uppercase text-emerald-500 mb-3">
+              <div className="font-mono text-sm tracking-[0.2em] uppercase text-emerald-500 mb-3">
                 Headquarters
               </div>
-              <p className="text-sm text-ink-700 leading-relaxed">
+              <p className="text-lg text-ink-700 leading-relaxed">
                 Abuja, Federal Capital Territory<br />
                 Nigeria
               </p>

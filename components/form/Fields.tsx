@@ -30,17 +30,17 @@ export function FieldWrapper({
     <div className="space-y-2">
       <label
         htmlFor={htmlFor}
-        className="font-mono text-sm uppercase tracking-[0.15em] text-ink-700 block"
+        className="font-mono text-base uppercase tracking-[0.15em] text-ink-700 block"
       >
         {label}
         {required && <span className="text-ochre-300 ml-1">*</span>}
       </label>
       {children}
       {hint && !error && (
-        <p className="text-sm text-ink-500 mt-1.5">{hint}</p>
+        <p className="text-base text-ink-500 mt-1.5">{hint}</p>
       )}
       {error && (
-        <p className="text-sm text-red-700 mt-1.5 flex items-start gap-1.5">
+        <p className="text-base text-red-700 mt-1.5 flex items-start gap-1.5">
           <span aria-hidden>↳</span>
           <span>{error}</span>
         </p>
@@ -51,7 +51,7 @@ export function FieldWrapper({
 
 // ── Shared field styles ───────────────────────────────────
 const fieldBaseClasses =
-  "w-full bg-transparent border-0 border-b border-ink-700/30 px-0 py-4 text-xl text-ink-900 font-display placeholder:text-ink-400 placeholder:font-sans placeholder:text-lg focus:border-emerald-500 focus:ring-0 transition-colors duration-200 outline-none";
+  "w-full bg-transparent border-0 border-b border-ink-700/30 px-0 py-5 text-2xl text-ink-900 font-display placeholder:text-ink-400 placeholder:font-sans placeholder:text-xl focus:border-emerald-500 focus:ring-0 transition-colors duration-200 outline-none";
 
 // ── Text input ───────────────────────────────────────────
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -240,11 +240,11 @@ export function RadioGroup({
                 )}
               </span>
               <span className="flex-1">
-                <span className="font-display text-xl text-ink-900 leading-tight block">
+                <span className="font-display text-2xl text-ink-900 leading-tight block">
                   {opt.label}
                 </span>
                 {opt.description && (
-                  <span className="text-base text-ink-600 mt-1.5 leading-relaxed block">
+                  <span className="text-lg text-ink-600 mt-1.5 leading-relaxed block">
                     {opt.description}
                   </span>
                 )}
@@ -289,7 +289,7 @@ export function RadioGroup({
                 <span className="w-1.5 h-1.5 bg-cream-50 rounded-full" />
               )}
             </span>
-            <span className="font-display text-lg text-ink-900">
+            <span className="font-display text-xl text-ink-900">
               {opt.label}
             </span>
           </label>
@@ -346,13 +346,13 @@ export function Checkbox({
             </svg>
           )}
         </span>
-        <span className="text-base text-ink-700 leading-relaxed">
+        <span className="text-lg text-ink-700 leading-relaxed">
           {label}
           {required && <span className="text-ochre-400 ml-1">*</span>}
         </span>
       </label>
       {error && (
-        <p className="text-sm text-red-700 mt-1.5 ml-8 flex items-start gap-1.5">
+        <p className="text-base text-red-700 mt-1.5 ml-8 flex items-start gap-1.5">
           <span aria-hidden>↳</span>
           <span>{error}</span>
         </p>

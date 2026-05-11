@@ -20,7 +20,7 @@ const tracks = [
     title: "Data Protection",
     short: "Master the laws and engineering of privacy.",
     description:
-      "Nigeria's NDPA is reshaping how organisations handle personal data. This track combines legal literacy with the technical practices that make compliance real — from privacy-by-design to data subject rights operations.",
+      "Nigeria's NDPA is reshaping how organisations handle personal data. This track combines legal literacy with the technical practices that make compliance real from privacy-by-design to data subject rights operations.",
     skills: [
       "NDPA & GDPR Literacy",
       "Privacy Engineering",
@@ -34,7 +34,7 @@ const tracks = [
     title: "Cybersecurity",
     short: "Defend the systems that keep Nigeria running.",
     description:
-      "Hands-on defensive security. Corps members learn to harden infrastructure, hunt threats, and respond to incidents — graduating with the practical skills employers actually hire for, not just certifications.",
+      "Hands-on defensive security. Corps members learn to harden infrastructure, hunt threats, and respond to incidents graduating with the practical skills employers actually hire for, not just certifications.",
     skills: [
       "Networks, Operating Systems, Linux",
       "Threat Detection & SIEM",

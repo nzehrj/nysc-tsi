@@ -76,7 +76,7 @@ export default function Home() {
                     <em className="text-emerald-500 font-medium not-italic">
                       Cybersecurity
                     </em>{" "}
-                    — three fields shaping the next decade of work in Africa.
+                    three fields shaping the next decade of work in Africa.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 mt-10">
@@ -189,7 +189,7 @@ export default function Home() {
                       .
                     </h2>
                     <p className="text-lg md:text-xl text-ink-700 mt-8 leading-relaxed max-w-xl text-pretty">
-                      Service year is a window — short, finite, and uniquely yours to
+                      Service year is a window short, finite, and uniquely yours to
                       shape. Spend a portion of it building real skills with real
                       teachers, alongside corps members who&apos;ll be your colleagues
                       for the next decade.
@@ -205,7 +205,7 @@ export default function Home() {
                         Rolling intake
                       </div>
                       <p className="text-base text-ink-600 mt-2">
-                        We review applications continuously. Apply early — cohort
+                        We review applications continuously. Apply early cohort
                         places are limited.
                       </p>
                     </div>

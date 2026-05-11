@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "How much does it cost?",
-    a: "Nothing. The programme is fully sponsored. Corps members pay no tuition, no examination fees, and no certificate fees. We expect commitment in return — your time, your attendance, and your effort.",
+    a: "Nothing. The programme is fully sponsored. Corps members pay no tuition, no examination fees, and no certificate fees. We expect commitment in return, your time, your attendance, and your effort.",
   },
   {
     q: "Can I do this while still serving at my Place of Primary Assignment?",
@@ -18,11 +18,11 @@ const faqs = [
   },
   {
     q: "Is the training online or in-person?",
-    a: "It's hybrid. Live sessions and the bulk of instruction happen virtually so corps members from any state can attend. Each cohort also has scheduled in-person zonal sessions — typically in Lagos, Abuja, Port Harcourt, Kano, and Enugu — for hands-on labs and networking.",
+    a: "It's hybrid. Live sessions and the bulk of instruction happen virtually so corps members from any state can attend. Each cohort also has scheduled in-person zonal sessions typically in Lagos, Abuja, Port Harcourt, Kano, and Enugu for hands-on labs and networking.",
   },
   {
     q: "What happens after I graduate?",
-    a: "You receive a certificate, alumni network access, and active placement support. Our partner companies prioritise NYSC TSI graduates for entry-level roles and internships. The skills you build — and the portfolio of projects — are what employers actually evaluate.",
+    a: "You receive a certificate, alumni network access, and active placement support. Our partner companies prioritise NYSC TSI graduates for entry-level roles and internships. The skills you build and the portfolio of projects — are what employers actually evaluate.",
   },
   {
     q: "Can I switch tracks once I've started?",
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "What if I don't have a laptop?",
-    a: "A laptop is required because the work is hands-on. If access is a barrier, indicate this in your application — we have a limited equipment-loan programme for accepted candidates with demonstrated need.",
+    a: "A laptop is required because the work is hands-on. If access is a barrier, indicate this in your application we have a limited equipment-loan programme for accepted candidates with demonstrated need.",
   },
   {
     q: "How is my personal data handled?",
@@ -69,7 +69,7 @@ function FaqItem({ q, a, idx }: { q: string; a: string; idx: number }) {
         }`}
       >
         <div className="overflow-hidden">
-          <div className="pl-14 md:pl-[4.5rem] pr-12 max-w-3xl">
+          <div className="pl-14 md:pl-18 pr-12 max-w-3xl">
             <p className="text-lg text-ink-700 leading-relaxed text-pretty">
               {a}
             </p>

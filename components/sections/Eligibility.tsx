@@ -12,7 +12,7 @@ const requirements = [
 const notRequired = [
   "Prior coding or technical experience",
   "A degree in computer science or a related field",
-  "Specific deployment state — open to corps members nationwide",
+  "Specific deployment state open to corps members nationwide",
 ];
 
 export default function Eligibility() {
@@ -28,7 +28,7 @@ export default function Eligibility() {
                   Eligibility
                 </div>
                 <h2 className="font-display text-display-md text-ink-900 leading-[1.05] tracking-tight text-balance">
-                  Who this <em className="font-light text-emerald-500">is for</em> —
+                  Who this <em className="font-light text-emerald-500">is for</em>
                   and isn&apos;t.
                 </h2>
                 <p className="text-lg text-ink-600 mt-6 leading-relaxed">

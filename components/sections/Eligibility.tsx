@@ -18,7 +18,7 @@ const notRequired = [
 export default function Eligibility() {
   return (
     <section className="py-24 md:py-32">
-      <div className="max-w-8xl mx-auto px-6 md:px-10">
+      <div className="max-w-[88rem] mx-auto px-6 md:px-10">
         <Reveal>
           <div className="grid grid-cols-12 gap-6 md:gap-10">
             <div className="col-span-12 md:col-span-4">

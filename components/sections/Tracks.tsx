@@ -48,7 +48,7 @@ const tracks = [
 export default function Tracks() {
   return (
     <section id="tracks" className="py-24 md:py-32 relative">
-      <div className="max-w-8xl mx-auto px-6 md:px-10">
+      <div className="max-w-[88rem] mx-auto px-6 md:px-10">
         {/* Section header */}
         <Reveal>
           <div className="grid grid-cols-12 gap-6 mb-20">

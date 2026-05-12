@@ -22,7 +22,7 @@ export default function Home() {
           </div>
 
           {/* Top metadata strip */}
-          <div className="max-w-8xl mx-auto px-6 md:px-10 mb-16 md:mb-24 relative z-10">
+          <div className="max-w-[88rem] mx-auto px-6 md:px-10 mb-16 md:mb-24 relative z-10">
             <Reveal>
               <div className="flex flex-wrap items-center gap-6 md:gap-12 font-mono text-sm tracking-[0.25em] uppercase text-ink-700">
                 <span className="flex items-center gap-2">
@@ -36,7 +36,7 @@ export default function Home() {
             </Reveal>
           </div>
 
-          <div className="max-w-8xl mx-auto px-6 md:px-10 relative z-10">
+          <div className="max-w-[88rem] mx-auto px-6 md:px-10 relative z-10">
             <div className="grid grid-cols-12 gap-6 md:gap-10">
               {/* Eyebrow */}
               <div className="col-span-12 md:col-span-4">
@@ -144,7 +144,7 @@ export default function Home() {
           </div>
 
           {/* Bottom rule */}
-          <div className="max-w-8xl mx-auto px-6 md:px-10 mt-20 md:mt-32 relative z-10">
+          <div className="max-w-[88rem] mx-auto px-6 md:px-10 mt-20 md:mt-32 relative z-10">
             <div className="border-t border-ink-900/15" />
           </div>
         </section>
@@ -163,7 +163,7 @@ export default function Home() {
 
         {/* ── Final CTA ────────────────────────────────────── */}
         <section className="py-24 md:py-32 relative">
-          <div className="max-w-8xl mx-auto px-6 md:px-10">
+          <div className="max-w-[88rem] mx-auto px-6 md:px-10">
             <Reveal>
               <div className="border border-ink-900 p-10 md:p-16 lg:p-20 relative overflow-hidden bg-cream-50">
                 {/* Decorative corner ornaments */}

@@ -15,7 +15,7 @@ export default function AboutPage() {
       <main className="flex-1 pt-32 md:pt-40">
         {/* Page intro */}
         <section className="py-12 md:py-20">
-          <div className="max-w-8xl mx-auto px-6 md:px-10">
+          <div className="max-w-[88rem] mx-auto px-6 md:px-10">
             <div className="grid grid-cols-12 gap-6">
               <div className="col-span-12 md:col-span-3">
                 <div className="font-mono text-sm uppercase tracking-[0.2em] text-emerald-500 flex items-center gap-3 mb-6">
@@ -37,7 +37,7 @@ export default function AboutPage() {
 
         {/* The why */}
         <section className="py-12 md:py-20">
-          <div className="max-w-8xl mx-auto px-6 md:px-10">
+          <div className="max-w-[88rem] mx-auto px-6 md:px-10">
             <div className="grid grid-cols-12 gap-6 md:gap-10">
               <div className="col-span-12 md:col-span-7 md:col-start-2">
                 <p className="font-display text-2xl md:text-3xl text-ink-900 leading-snug text-balance">
@@ -78,7 +78,7 @@ export default function AboutPage() {
 
         {/* Three principles */}
         <section className="py-24 md:py-32 bg-cream-100/40">
-          <div className="max-w-8xl mx-auto px-6 md:px-10">
+          <div className="max-w-[88rem] mx-auto px-6 md:px-10">
             <div className="grid grid-cols-12 gap-6 mb-16">
               <div className="col-span-12 md:col-span-3">
                 <div className="font-mono text-sm uppercase tracking-[0.2em] text-emerald-500 flex items-center gap-3 mb-6">
@@ -134,7 +134,7 @@ export default function AboutPage() {
 
         {/* Closing CTA */}
         <section className="py-24 md:py-32">
-          <div className="max-w-8xl mx-auto px-6 md:px-10">
+          <div className="max-w-[88rem] mx-auto px-6 md:px-10">
             <div className="border border-ink-900 p-10 md:p-16 text-center">
               <div className="font-mono text-sm uppercase tracking-[0.2em] text-emerald-500 flex items-center gap-3 mb-6 justify-center">
                 <span className="w-8 h-px bg-emerald-500" />
